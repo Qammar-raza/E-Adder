@@ -91,7 +91,7 @@ class Problems extends Component {
         const { storageRef, user, blob, metaData } = this.state;
 
         storageRef
-            .child(`problems/users/user-${user.uid}`)
+            .child(`problems/user/user-${user.uid}`)
             .put(blob, metaData)
             .then(snap => {
                 snap.ref.getDownloadURL()
@@ -146,7 +146,7 @@ class Problems extends Component {
                     console.error(err);
                 })
         } else {
-            alert('department name does not match with our department')
+            alert('department name does not match with our department bfjhdfij')
         }
 
 
